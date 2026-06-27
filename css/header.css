@@ -1,0 +1,138 @@
+header nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  justify-content: space-between;
+  list-style: none;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+
+  .menu-links {
+    display: none;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .icon-mobile {
+    display: none;
+  }
+
+  .menu-mobile-icon {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .menu-mobile-icon span {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .menu-mobile-icon span:before,
+  .menu-mobile-icon span:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .menu-mobile-icon span:before {
+    top: 5px;
+  }
+
+  .menu-mobile-icon span:after {
+    top: -5px;
+  }
+
+  .menu-mobile-btn {
+    display: none;
+  }
+
+  .menu-mobile-btn:checked ~ .menu-mobile-icon span {
+    background: transparent;
+  }
+
+  .menu-mobile-btn:checked ~ .menu-mobile-icon span:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-mobile-btn:checked ~ .menu-mobile-icon span:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-mobile-btn:checked ~ .menu-mobile-icon:not(.steps) span:before,
+  .menu-mobile-btn:checked ~ .menu-mobile-icon:not(.steps) span:after {
+    top: 0;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+}
+
+header {
+  position: relative;
+}
+
+@media (width >= 64rem) {
+  nav {
+    padding: 3rem 8rem 3rem 8rem;
+  }
+}
+
+@media (min-width: 48em) {
+  header {
+    position: absolute;
+    width: 100%;
+    .icon-mobile {
+      display: none;
+    }
+
+    nav {
+      .menu-mobile-icon {
+        display: none;
+      }
+      .menu-links {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-mobile-btn:checked ~ .menu-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+  }
+}
