@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-page {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
