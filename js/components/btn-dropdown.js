@@ -6,6 +6,7 @@ class BtnDropdown extends HTMLElement {
 
   connectedCallback() {
     const label = this.getAttribute("label") || "Menu";
+    
     this.shadowRoot.innerHTML = `
       <style>
         .dropdown{
@@ -49,19 +50,19 @@ class BtnDropdown extends HTMLElement {
             transform .25s,
             visibility .25s;
           z-index:9999;
-            @media (min-width: 48em) {
-              right:0;
-            }
+          @media (min-width: 48em) {
+            right:0;
           }
-
-        .dropdown:hover .submenu{
-          opacity:1;
-          visibility:visible;
-          transform:translateY(0);
         }
 
-        .dropdown:hover .button::after{
-          transform:rotate(180deg);
+        .button.open::after {
+          transform: rotate(180deg);
+        }
+
+        .submenu.open {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
         }
 
         .submenu li{
@@ -85,17 +86,38 @@ class BtnDropdown extends HTMLElement {
         .submenu a:hover{
           background:#2d2d2d;
         }
+
+        @media (min-width: 48em) {
+          .dropdown:hover .submenu{
+            opacity:1;
+            visibility:visible;
+            transform:translateY(0);
+          }
+            
+          .dropdown:hover .button::after{
+            transform:rotate(180deg);
+          }
+        }
       </style>
 
       <div class="dropdown">
         <div class="button">
           ${label}
         </div>
+
         <ul class="submenu">
           <slot></slot>
         </ul>
       </div>
     `;
+
+    const button = this.shadowRoot.querySelector(".button");
+    const submenu = this.shadowRoot.querySelector(".submenu");
+
+    button.addEventListener("click", () => {
+      submenu.classList.toggle("open");
+      button.classList.toggle("open");
+    });
   }
 }
 
