@@ -5,20 +5,11 @@ header nav {
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   justify-content: space-between;
   list-style: none;
-  
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
-
-  li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
   }
 
   .menu-links {
@@ -113,7 +104,16 @@ header {
         display: none;
       }
       .menu-links {
-        display: flex;
+        display:flex;
+        align-items:center;
+        gap:2rem;
+        list-style:none;
+        margin:0;
+        padding:0;
+      }
+
+      .menu-links > li {
+        position:relative;
       }
     }
   }

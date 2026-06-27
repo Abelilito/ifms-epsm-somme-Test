@@ -6,6 +6,10 @@
     <title>IFMS EPSM SOMME</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    
+    <!-- Web components -->
+    <script src="js/components/btn-dropdown.js"></script>
+    <script src="js/components/dropdown-item.js"></script>
   </head>
 
   <body>
@@ -14,12 +18,33 @@
         <header>
           <nav>
             <img src="images/logo.png" alt="Users picture" class="logo" />
+
             <input class="menu-mobile-btn" type="checkbox" id="menu-mobile-btn">
+
             <label class="menu-mobile-icon" for="menu-mobile-btn">
               <span></span>
             </label>
 
             <ul class="menu-links">
+              <li>
+                <btn-dropdown label="Informations">
+                  <dropdown-item href="#">
+                    Accessibilité Handicap
+                  </dropdown-item>
+
+                  <dropdown-item href="#">
+                    Qualiopi
+                  </dropdown-item>
+
+                  <dropdown-item href="#">
+                    Ressources Humaines
+                  </dropdown-item>
+
+                  <dropdown-item href="#">
+                    Situation Géographique
+                  </dropdown-item>
+                </btn-dropdown>
+              </li>
             </ul>
           </nav>
         </header>
