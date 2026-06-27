@@ -9,17 +9,18 @@ class DropdownItem extends HTMLElement {
       this.shadowRoot.innerHTML=`
       <style>
         a{
-          display:block;
-          padding:1.3rem 1.8rem;
-          color:white;
-          text-decoration:none;
-          font-size:1rem;
-          font-weight:600;
-          transition:.2s;
+          display: block;
+          padding: 1.3rem 1.8rem;
+          color: #5A5A5A;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 600;
+          transition: .2s;
         }
 
         a:hover{
-          background:#2d2d2d;
+          background: #2d2d2d;
+          color: white;
         }
       </style>
 
