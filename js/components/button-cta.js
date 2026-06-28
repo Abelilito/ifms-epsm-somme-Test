@@ -40,15 +40,23 @@ class Button extends HTMLElement {
           color: #0B1741;
         }
 
+        .btn-secondary {
+          background: #0B1741;
+          color: white;
+        }
+
         .btn-success:hover,
-        .btn-primary:hover {
+        .btn-primary:hover,
+        .btn-secondary {
           transform: translateY(-2px);
           box-shadow:
             0 6px 12px rgba(0, 0, 0, 0.2),
             inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
-        .btn-success:active {
+        .btn-success:active,
+        .btn-primary:active,
+        .btn-secondary:active {
           transform: translateY(0);
         }
       </style>
