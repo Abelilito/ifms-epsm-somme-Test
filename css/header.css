@@ -1,5 +1,4 @@
 header nav {
-  padding: 2rem;
   display: flex;
   align-items: center;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -9,12 +8,15 @@ header nav {
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; 
+    li a {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .menu-links {
     display: none;
-    gap: 2rem;
     list-style: none;
   }
 
@@ -88,7 +90,7 @@ header {
 
 @media (width >= 64rem) {
   nav {
-    padding: 3rem 8rem 3rem 8rem;
+    padding: 1rem 4rem 1rem 4rem;
   }
 }
 
@@ -105,16 +107,15 @@ header {
         display: none;
       }
       .menu-links {
-        display:flex;
-        align-items:center;
-        gap:2rem;
-        list-style:none;
-        margin:0;
-        padding:0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
 
       .menu-links > li {
-        position:relative;
+        position: relative;
       }
     }
   }
@@ -126,6 +127,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .m-1 {
+    margin: 1rem 1.5rem;
   }
 
   .menu-mobile-btn:checked ~ .menu-links {
