@@ -114,6 +114,7 @@ class BtnDropdown extends HTMLElement {
             width: 100%;
             justify-content: space-between;
             padding: 1rem;
+            border-top: 1px solid #D6D6D6;
           }
         }
       </style>

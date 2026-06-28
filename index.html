@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFMS EPSM SOMME</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
 
     <!-- Web components -->
     <script src="js/components/button-cta.js"></script>
     <script src="js/components/btn-dropdown.js"></script>
     <script src="js/components/dropdown-submenu.js"></script>
     <script src="js/components/dropdown-item.js"></script>
+    <script src="js/components/stat-card.js"></script>
   </head>
 
   <body>
-    <div class="main-page">
+    <div class="main-wrapper">
       <div>
         <header>
           <nav>
             <div class="wrapper-logo">
-              <img src="images/logo.png" alt="Users picture" class="logo" />
+              <img src="images/logo.png" alt="IFMS EPSM logo" class="logo" />
               <div>
                 Institut de Fortmation aux Métiers de la Santé
                 <span>
@@ -76,7 +76,7 @@
                 </btn-dropdown>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <a href="">ESPAS</a>
               </li>
 
@@ -89,17 +89,67 @@
                 </btn-dropdown>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <a href="">CRD</a>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <button-cta href="#" variant="btn-primary" text="Contact"></button-cta>
               </li>
             </ul>
           </nav>
         </header>
       </div>
+
+      <main>
+        <section class="welcome">
+          <div class="welcome-media">
+            <img src="images/IFSI-1.jpg" alt="Image d'accueil" class="welcome-image">
+
+            <div class="welcome-overlay"></div>
+            <div class="welcome__content">
+              <h1>
+                Institut de Formation<br>
+                aux Métiers de la Santé
+              </h1>
+
+              <p>
+                L'IFMS de l'EPSM de la Somme forme des professionnels compétents, engagés et responsables.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="wrapper-stats">
+          <stat-card 
+            icon="images/svg/smiley.svg"
+            alt_tag="Icon répresentant un smiley"
+            data ="97,5 %"
+            description="des apprenants sont satisfaits de l'accompagnement des formateurs."
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/graduation.svg"
+            alt_tag="Icon répresentant un graduer"
+            data ="53"
+            description="Diplômés IDE<br>Juillet 2025"
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/user.svg"
+            alt_tag="Icon répresentant un utilisateur"
+            data ="11"
+            description="Diplômés AS<br>Juillet 2025"
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/badge.svg"
+            alt_tag="Icon répresentant un badge"
+            data ="96,36 %"
+            description="Réussite"
+          ></stat-card>
+        </section>
+      </main>
 
       <footer>
         FOOTER
