@@ -9,92 +9,90 @@ class BtnDropdown extends HTMLElement {
     
     this.shadowRoot.innerHTML = `
       <style>
-        .dropdown{
-          position: relative;
-        }
-
-        .button{
-          display: flex;
+        .button {
+          display: inline-flex;
           align-items: center;
-          gap: 5px;
+          gap: .5rem;
+          padding: 1.3rem 1.8rem;
           cursor: pointer;
           color: #222;
           font-size: 1rem;
-          font-weight: 00;
-          white-space: owrap;
-        }
-
-        .button::after{
-          content: "⌄";
-          font-size: .75rem;
+          font-weight: 600;
+          background: #fff;
           transition: .25s;
         }
 
-        .submenu{
-          position: absolute;
-          top: calc(100% + 12px);
-          margin: 0 0 0 1rem;
-          width: 250px;
-          padding: 0;
-          list-style: none;
-          background: #F5F5F5;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: 0 12px 35px rgba(0,0,0,.25);
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(8px);
-          transition:
-            opacity .25s,
-            transform .25s,
-            visibility .25s;
-          z-index:9999;
-          @media (min-width: 48em) {
-            right: 0;
-          }
+        .button::after {
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-right: 2px solid currentColor;
+          border-bottom: 2px solid currentColor;
+          transform: rotate(45deg) translateY(-1px);
+          transition: transform .25s ease;
         }
 
         .button.open::after {
-          transform: rotate(180deg);
+          transform: rotate(226deg);
         }
 
-        .submenu.open {
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(0);
-        }
+        /* ---------- Desktop ---------- */
+        @media (min-width:48em) {
+          .dropdown {
+            position: relative;
+          }
+            
+          .submenu {
+            position: absolute;
+            top: calc(100% + 12px);
+            right: 0;
+            width: 250px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background: #F5F5F5;
+            overflow: visible;
+            box-shadow: 0 12px 35px rgba(0,0,0,.25);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: .25s;
+            z-index: 9999;
+          }
 
-        .submenu li{
-          border-bottom: 1px solid rgba(255,255,255,.12);
-        }
-
-        .submenu li:last-child{
-          border-bottom:none;
-        }
-
-        .submenu a{
-          display: block;
-          padding: 1.4rem 1.8rem;
-          color: white;
-          text-decoration: none;
-          font-size: 1rem;
-          font-weight: 600;
-          transition: .2s;
-        }
-
-        .submenu a:hover{
-          background: #2d2d2d;
-        }
-
-        @media (min-width: 48em) {
-          .dropdown:hover .submenu{
+          .submenu.open,
+          .dropdown:hover .submenu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
           }
-            
-          .dropdown:hover .button::after{
-            transform: rotate(180deg);
+
+          .dropdown:hover .button::after {
+            transform: rotate(226deg);
+          }
+        }
+
+        /* ---------- Mobile ---------- */
+        @media (max-width:47.99em) {
+          .submenu{
+            position: static;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background:#fff;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            border-radius: 0;
+            transition: max-height .3s ease;
+          }
+
+          .submenu.open {
+            max-height: 2000px;
           }
         }
       </style>
@@ -116,6 +114,13 @@ class BtnDropdown extends HTMLElement {
     button.addEventListener("click", () => {
       submenu.classList.toggle("open");
       button.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.composedPath().includes(this)) {
+        submenu.classList.remove("open");
+        button.classList.remove("open");
+      }
     });
   }
 }

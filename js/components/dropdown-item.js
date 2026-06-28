@@ -8,7 +8,7 @@ class DropdownItem extends HTMLElement {
       const href=this.getAttribute("href") ?? "#";
       this.shadowRoot.innerHTML=`
       <style>
-        a{
+        a {
           display: block;
           padding: 1.3rem 1.8rem;
           color: #5A5A5A;
@@ -16,9 +16,10 @@ class DropdownItem extends HTMLElement {
           font-size: 1rem;
           font-weight: 600;
           transition: .2s;
+          border-bottom: 1px solid #D6D6D6;
         }
 
-        a:hover{
+        a:hover {
           background: #2d2d2d;
           color: white;
         }
