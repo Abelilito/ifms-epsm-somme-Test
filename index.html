@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFMS EPSM SOMME</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/welcome.css">
 
     <!-- Web components -->
     <script src="js/components/button-cta.js"></script>
     <script src="js/components/btn-dropdown.js"></script>
     <script src="js/components/dropdown-submenu.js"></script>
     <script src="js/components/dropdown-item.js"></script>
+    <script src="js/components/stat-card.js"></script>
   </head>
 
   <body>
@@ -104,10 +103,10 @@
 
       <main>
         <section class="welcome">
-          <div class="welcome__media">
-            <img src="images/IFSI-1.jpg" alt="" class="welcome__image">
+          <div class="welcome-media">
+            <img src="images/IFSI-1.jpg" alt="" class="welcome-image">
 
-            <div class="welcome__overlay"></div>
+            <div class="welcome-overlay"></div>
             <div class="welcome__content">
               <h1>
                 Institut de Formation<br>
@@ -119,6 +118,36 @@
               </p>
             </div>
           </div>
+        </section>
+
+        <section class="wrapper-stats">
+          <stat-card 
+            icon="images/svg/smiley.svg"
+            alt_tag="Icon répresentant un smiley"
+            data ="97,5 %"
+            description="des apprenants sont satisfaits de l'accompagnement des formateurs."
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/graduation.svg"
+            alt_tag="Icon répresentant un graduer"
+            data ="53"
+            description="Diplômés IDE<br>Juillet 2025"
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/user.svg"
+            alt_tag="Icon répresentant un utilisateur"
+            data ="11"
+            description="Diplômés AS<br>Juillet 2025"
+          ></stat-card>
+
+          <stat-card 
+            icon="images/svg/badge.svg"
+            alt_tag="Icon répresentant un badge"
+            data ="96,36 %"
+            description="Réussite"
+          ></stat-card>
         </section>
       </main>
 
