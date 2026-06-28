@@ -34,10 +34,11 @@ class Stats extends HTMLElement {
         }
 
         .stat p {
-          color:#5d6675;
+          color: #0B1741;
           line-height: 1.6;
           font-size: clamp(14px, 2vw, 14px);
           margin-bottom: 0;
+          font-family: 'Montserrat-medium', sans-serif;
         }
 
         @media (max-width:768px) {

@@ -2,6 +2,13 @@
 @import url("./header.css");
 @import url("./welcome.css");
 @import url("./stats.css");
+@import url("./testimonial.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -10,6 +17,7 @@ body {
   min-height: 100vh;
   font-size: 12px;
   font-family: 'Montserrat-light', sans-serif;
+  background-color: white;
 }
 
 .main-wrapper {
@@ -17,4 +25,25 @@ body {
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
+}
+
+h3 {
+  text-align: center;
+  font-size: clamp(18px, 2vw, 22px);
+  font-family: 'Montserrat-bold', sans-serif;
+  color: #0B1741;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
 }

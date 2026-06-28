@@ -1,6 +1,6 @@
 .wrapper-stats {
   position: relative;
-  max-width: 1300px;
+  width: min(1300px, calc(100% - 40px));
   margin: -120px auto 80px;
   background:white;
   border-radius: 15px;
@@ -32,10 +32,11 @@
 
 @media (max-width: 768px) {
   .wrapper-stats {
-    margin: -50px 20px 40px;
+    width: calc(100% - 32px);
+    margin: -50px auto 40px;
     grid-template-columns: 1fr;
 
-    .wrapper-stats stat-card:not(:last-child) {
+    stat-card:not(:last-child) {
       border-bottom: 1px solid #ececec;
     }
   }

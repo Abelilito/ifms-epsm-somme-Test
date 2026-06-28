@@ -12,6 +12,7 @@
     <script src="js/components/dropdown-submenu.js"></script>
     <script src="js/components/dropdown-item.js"></script>
     <script src="js/components/stat-card.js"></script>
+    <script src="js/components/testimonial-card.js"></script>
   </head>
 
   <body>
@@ -121,33 +122,58 @@
         </section>
 
         <section class="wrapper-stats">
-          <stat-card 
+          <stat-card
             icon="images/svg/smiley.svg"
             alt_tag="Icon répresentant un smiley"
             data ="97,5 %"
             description="des apprenants sont satisfaits de l'accompagnement des formateurs."
           ></stat-card>
 
-          <stat-card 
+          <stat-card
             icon="images/svg/graduation.svg"
             alt_tag="Icon répresentant un graduer"
             data ="53"
             description="Diplômés IDE<br>Juillet 2025"
           ></stat-card>
 
-          <stat-card 
+          <stat-card
             icon="images/svg/user.svg"
             alt_tag="Icon répresentant un utilisateur"
             data ="11"
             description="Diplômés AS<br>Juillet 2025"
           ></stat-card>
 
-          <stat-card 
+          <stat-card
             icon="images/svg/badge.svg"
             alt_tag="Icon répresentant un badge"
             data ="96,36 %"
             description="Réussite"
           ></stat-card>
+        </section>
+
+        <section class="container">
+          <h3>Verbatims étudiants</h3>
+          <div class="wrapper-testimonials">
+            <testimonial-card
+              text="
+                J’ai passé 3 belles années de formation au sein de l’institut, le suivi des étudiants est vraiment présent.
+                On se sent accompagné et écouté.
+              "
+            ></testimonial-card>
+
+            <testimonial-card
+              text="
+                Aucune remarque, les enseignements et les actions mis en place à l’IFSI sont vraiment propices
+                à une bonne prise de poste!
+              "
+            ></testimonial-card>
+
+            <testimonial-card
+              text="
+                Pour moi tout est parfait seulement un grand merci à toute l’équipe de formation car je suis réellement épanouie !
+              "
+            ></testimonial-card>
+          </div>
         </section>
       </main>
 
