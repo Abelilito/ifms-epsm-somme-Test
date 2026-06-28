@@ -5,7 +5,7 @@ class DropdownItem extends HTMLElement {
     }
 
     connectedCallback(){
-      const href=this.getAttribute("href") ?? "#";
+      const href= this.getAttribute("href") ?? "#";
       const classe = this.getAttribute("classe") || " ";
 
       this.shadowRoot.innerHTML=`
