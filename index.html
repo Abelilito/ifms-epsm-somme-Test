@@ -6,6 +6,7 @@
     <title>IFMS EPSM SOMME</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/welcome.css">
 
     <!-- Web components -->
     <script src="js/components/button-cta.js"></script>
@@ -15,7 +16,7 @@
   </head>
 
   <body>
-    <div class="main-page">
+    <div class="main-wrapper">
       <div>
         <header>
           <nav>
@@ -76,7 +77,7 @@
                 </btn-dropdown>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <a href="">ESPAS</a>
               </li>
 
@@ -89,17 +90,37 @@
                 </btn-dropdown>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <a href="">CRD</a>
               </li>
 
-              <li class="m-1">
+              <li class="border-top-li">
                 <button-cta href="#" variant="btn-primary" text="Contact"></button-cta>
               </li>
             </ul>
           </nav>
         </header>
       </div>
+
+      <main>
+        <section class="welcome">
+          <div class="welcome__media">
+            <img src="images/IFSI-1.jpg" alt="" class="welcome__image">
+
+            <div class="welcome__overlay"></div>
+            <div class="welcome__content">
+              <h1>
+                Institut de Formation<br>
+                aux Métiers de la Santé
+              </h1>
+
+              <p>
+                L'IFMS de l'EPSM de la Somme forme des professionnels compétents, engagés et responsables.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <footer>
         FOOTER

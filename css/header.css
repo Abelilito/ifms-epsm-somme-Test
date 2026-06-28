@@ -2,14 +2,15 @@
 
 header {
   position: relative;
+  z-index: 1000;
 
   nav {
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     justify-content: space-between;
     list-style: none;
-  
+    background-color: white;
+
     ul {
       margin: 0;
       padding: 0;
@@ -20,22 +21,23 @@ header {
         font-family: 'Montserrat-bold', sans-serif;
       }
     }
-  
+
     .menu-links {
       display: none;
       list-style: none;
+      background-color: white;
     }
-  
+
     .icon-mobile {
       display: none;
     }
-  
+
     .menu-mobile-icon {
       cursor: pointer;
       user-select: none;
       padding: 5px;
     }
-  
+
     .menu-mobile-icon span {
       background: #333;
       display: block;
@@ -44,7 +46,7 @@ header {
       transition: background .2s ease-out;
       width: 18px;
     }
-  
+
     .menu-mobile-icon span:before,
     .menu-mobile-icon span:after {
       background: #333;
@@ -55,44 +57,44 @@ header {
       transition: all .2s ease-out;
       width: 100%;
     }
-  
+
     .menu-mobile-icon span:before {
       top: 5px;
     }
-  
+
     .menu-mobile-icon span:after {
       top: -5px;
     }
-  
+
     .menu-mobile-btn {
       display: none;
     }
-  
+
     .menu-mobile-btn:checked ~ .menu-mobile-icon span {
       background: transparent;
     }
-  
+
     .menu-mobile-btn:checked ~ .menu-mobile-icon span:before {
       transform: rotate(-45deg);
     }
-  
+
     .menu-mobile-btn:checked ~ .menu-mobile-icon span:after {
       transform: rotate(45deg);
     }
-  
+
     .menu-mobile-btn:checked ~ .menu-mobile-icon:not(.steps) span:before,
     .menu-mobile-btn:checked ~ .menu-mobile-icon:not(.steps) span:after {
       top: 0;
     }
-  
+
     .logo {
       width: 5rem;
     }
-  
-    .m-1 {
-      margin: 1rem;
+
+    .border-top-li {
+      padding: 1rem;
     }
-  
+
     .wrapper-logo {
       display: flex;
       align-items: center;
@@ -130,6 +132,7 @@ header {
       .menu-mobile-icon {
         display: none;
       }
+
       .menu-links {
         display: flex;
         align-items: center;
@@ -158,8 +161,12 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100%);
     left: 0;
     width: 100%;
+  }
+
+  .border-top-li {
+    border-top: 1px solid #D6D6D6;
   }
 }
