@@ -29,12 +29,18 @@ class Button extends HTMLElement {
             inset 0 1px 0 rgba(255, 255, 255, 0.25);
           transition: all .25s ease;
         }
-        
-       .btn-primary {
+
+        .btn-success {
           background: linear-gradient(180deg, #0aa0a5 0%, #008f95 100%);
           color: #fff;
         }
 
+        .btn-primary {
+          background: white;
+          color: #0B1741;
+        }
+
+        .btn-success:hover,
         .btn-primary:hover {
           transform: translateY(-2px);
           box-shadow:
@@ -42,7 +48,7 @@ class Button extends HTMLElement {
             inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
-        .btn-primary:active {
+        .btn-success:active {
           transform: translateY(0);
         }
       </style>
