@@ -13,7 +13,7 @@ class DropdownSubmenu extends HTMLElement {
           display: block;
         }
 
-        .item{
+        .item {
           position: relative;
         }
 
@@ -23,30 +23,31 @@ class DropdownSubmenu extends HTMLElement {
           align-items: center;
           padding: 1rem;
           background: white;
-          color: #5A5A5A;
-          font-size: 1rem;
+          color: black;
+          font-size: 14px;
           font-weight: 600;
           cursor: pointer;
           transition: .25s;
           border-bottom: 1px solid #D6D6D6;
+          font-family: 'Montserrat-bold', sans-serif;
         }
 
-        .button:hover{
+        .button:hover {
           background: #2d2d2d;
           color: white;
         }
 
-        .button::after{
+        .button::after {
           content: "⌄";
           font-size: .75rem;
           transition: transform .25s;
         }
 
-        .button.open::after{
+        .button.open::after {
           transform: rotate(180deg);
         }
 
-        .submenu{
+        .submenu {
           list-style: none;
           margin: 0;
           padding: 0;

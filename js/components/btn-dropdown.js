@@ -16,7 +16,8 @@ class BtnDropdown extends HTMLElement {
           width: 100%;
           cursor: pointer;
           color: #222;
-          font-size: 1rem;
+          font-size: 14px;
+          font-family: 'Montserrat-bold', sans-serif;
           font-weight: 600;
           background: #fff;
           transition: .25s;

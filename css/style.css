@@ -1,8 +1,12 @@
+@import url("./fonts.css");
+
 body {
   margin: 0;
   display: flex;
   width: 100%;
   min-height: 100vh;
+  font-size: 12px;
+  font-family: 'Montserrat-light', sans-serif;
 }
 
 .main-page {

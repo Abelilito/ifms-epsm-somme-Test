@@ -1,6 +1,8 @@
+@import url("./fonts.css");
+
 header {
   position: relative;
-  
+
   nav {
     display: flex;
     align-items: center;
@@ -15,6 +17,7 @@ header {
       li a {
         text-decoration: none;
         color: black;
+        font-family: 'Montserrat-bold', sans-serif;
       }
     }
   
@@ -94,10 +97,12 @@ header {
       display: flex;
       align-items: center;
       gap: 10px;
-      width: 14rem;
+      width: 15rem;
       div {
         display: flex;
         flex-direction: column;
+        font-family: 'Montserrat-bold', sans-serif;
+        font-size: 14px;
         gap: 5px;
         span {
           color: #0aa0a5;
