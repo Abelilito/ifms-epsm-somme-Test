@@ -8,7 +8,7 @@ header nav {
   ul {
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
     li a {
       text-decoration: none;
       color: black;
@@ -82,6 +82,10 @@ header nav {
   .logo {
     width: 5rem;
   }
+
+  .m-1 {
+    margin: 1rem;
+  }
 }
 
 header {
@@ -128,10 +132,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem 1rem 2rem;
-  }
-
-  .m-1 {
-    margin: 1rem 1.5rem;
   }
 
   .menu-mobile-btn:checked ~ .menu-links {

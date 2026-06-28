@@ -21,7 +21,7 @@ class DropdownSubmenu extends HTMLElement {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 1.3rem 1.8rem;
+          padding: 1rem;
           background: white;
           color: #5A5A5A;
           font-size: 1rem;

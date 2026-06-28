@@ -103,7 +103,7 @@ class BtnDropdown extends HTMLElement {
             width: auto;
             justify-content: flex-start;
             gap: .5rem;
-            padding: 1.3rem 1.8rem;
+            padding: 1rem;
           }
         }
 
@@ -112,7 +112,7 @@ class BtnDropdown extends HTMLElement {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding: 1.3rem 1.8rem;
+            padding: 1rem;
           }
         }
       </style>

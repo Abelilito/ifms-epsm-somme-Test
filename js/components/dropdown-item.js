@@ -12,7 +12,7 @@ class DropdownItem extends HTMLElement {
       <style>
         a {
           display: block;
-          padding: 1.3rem 1.8rem;
+          padding: 1rem;
           color: #5A5A5A;
           text-decoration: none;
           font-size: 1rem;
