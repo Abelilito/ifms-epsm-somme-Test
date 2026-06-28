@@ -10,9 +10,10 @@ class BtnDropdown extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .button {
-          display: inline-flex;
+          display: flex;
+          justify-content: space-between;
           align-items: center;
-          gap: .5rem;
+          width: 100%;
           padding: 1.3rem 1.8rem;
           cursor: pointer;
           color: #222;
@@ -20,6 +21,7 @@ class BtnDropdown extends HTMLElement {
           font-weight: 600;
           background: #fff;
           transition: .25s;
+          box-sizing: border-box;
         }
 
         .button::after {
@@ -50,7 +52,7 @@ class BtnDropdown extends HTMLElement {
             padding: 0;
             margin: 0;
             list-style: none;
-            background: #F5F5F5;
+            background: white;
             overflow: visible;
             box-shadow: 0 12px 35px rgba(0,0,0,.25);
             opacity: 0;
@@ -93,6 +95,23 @@ class BtnDropdown extends HTMLElement {
 
           .submenu.open {
             max-height: 2000px;
+          }
+        }
+        
+        @media (min-width: 769px) {
+          .button {
+            display: inline-flex;
+            width: auto;
+            justify-content: flex-start;
+            gap: .5rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .button {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
           }
         }
       </style>

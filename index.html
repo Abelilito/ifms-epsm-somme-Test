@@ -9,6 +9,7 @@
     
     <!-- Web components -->
     <script src="js/components/btn-dropdown.js"></script>
+    <script src="js/components/dropdown-submenu.js"></script>
     <script src="js/components/dropdown-item.js"></script>
   </head>
 
@@ -20,7 +21,6 @@
             <img src="images/logo.png" alt="Users picture" class="logo" />
 
             <input class="menu-mobile-btn" type="checkbox" id="menu-mobile-btn">
-
             <label class="menu-mobile-icon" for="menu-mobile-btn">
               <span></span>
             </label>
@@ -28,21 +28,42 @@
             <ul class="menu-links">
               <li>
                 <btn-dropdown label="Informations">
-                  <dropdown-item href="#">
-                    Accessibilité Handicap
-                  </dropdown-item>
+                  <dropdown-item href="#"> Accessibilité handicap </dropdown-item>
+                  <dropdown-item href="#"> Qualiopi </dropdown-item>
+                  <dropdown-item href="#">Ressources humaines</dropdown-item>
+                  <dropdown-item href="#">Situation géographique</dropdown-item>
+                </btn-dropdown>
+              </li>
 
-                  <dropdown-item href="#">
-                    Qualiopi
-                  </dropdown-item>
+              <li>
+                <btn-dropdown label="Formations">
+                  <dropdown-item href="#">Règlement intérieur, Livret d'accueil</dropdown-item>
 
-                  <dropdown-item href="#">
-                    Ressources Humaines
-                  </dropdown-item>
+                  <dropdown-submenu label="Infirmier(e)">
+                    <dropdown-item href="#">Contenu</dropdown-item>
+                    <dropdown-item href="#">Évolution professionnelle</dropdown-item>
+                    <dropdown-item href="#">Modalitéq s'admission IDE</dropdown-item>
+                    <dropdown-item href="#">Statistiques</dropdown-item>
+                    <dropdown-item href="#">Photothèque</dropdown-item>
+                  </dropdown-submenu>
 
-                  <dropdown-item href="#">
-                    Situation Géographique
-                  </dropdown-item>
+                  <dropdown-submenu label="Aide-soignant(e)">
+                    <dropdown-item href="#">Contenu</dropdown-item>
+                    <dropdown-item href="#">Evolution professionelle AS</dropdown-item>
+                    <dropdown-item href="#">Modalités d'admission AS</dropdown-item>
+                    <dropdown-item href="#">Statistiques</dropdown-item>
+                    <dropdown-item href="#">Photothèque</dropdown-item>
+                  </dropdown-submenu>
+
+                  <dropdown-submenu label="Formation contiunue">
+                    <dropdown-item href="#">Formation accueil et encadrement des etudians en soins infirmièrs en stage</dropdown-item>
+                    <dropdown-item href="#">Formation accueil et encadrement des élèves aides soignants en stage</dropdown-item>
+                    <dropdown-item href="#">Formation aide soignant actualisation des compétences</dropdown-item>
+                    <dropdown-item href="#">Statistiques</dropdown-item>
+                    <dropdown-item href="#">Photothèque</dropdown-item>
+                  </dropdown-submenu>
+
+                  <dropdown-item href="#">Stage à l'étranger</dropdown-item>
                 </btn-dropdown>
               </li>
             </ul>
