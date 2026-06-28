@@ -13,6 +13,7 @@ class Button extends HTMLElement {
       <style>
         a {
           text-decoration: none;
+          font-size: 12px;
         }
         
        .btn-primary {
@@ -24,7 +25,6 @@ class Button extends HTMLElement {
           color: #fff;
           border: none;
           border-radius: 8px;
-          font-size: 15px;
           font-weight: 700;
           letter-spacing: 0.5px;
           text-transform: uppercase;

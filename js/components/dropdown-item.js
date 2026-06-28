@@ -15,7 +15,7 @@ class DropdownItem extends HTMLElement {
           padding: 1rem;
           color: #5A5A5A;
           text-decoration: none;
-          font-size: 1rem;
+          font-size: 12px;
           font-weight: 600;
           transition: .2s;
           border-bottom: 1px solid #D6D6D6;
