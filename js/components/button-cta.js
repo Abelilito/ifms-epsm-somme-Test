@@ -14,18 +14,13 @@ class Button extends HTMLElement {
         a {
           text-decoration: none;
           font-size: 12px;
-        }
-        
-       .btn-primary {
+          font-family: 'Montserrat-bold', sans-serif;
           display: inline-flex;
           justify-content: center;
           align-items: center;
           padding: 14px 20px;
-          background: linear-gradient(180deg, #0aa0a5 0%, #008f95 100%);
-          color: #fff;
           border: none;
           border-radius: 8px;
-          font-weight: 700;
           letter-spacing: 0.5px;
           text-transform: uppercase;
           cursor: pointer;
@@ -33,6 +28,11 @@ class Button extends HTMLElement {
             0 2px 6px rgba(0, 0, 0, 0.15),
             inset 0 1px 0 rgba(255, 255, 255, 0.25);
           transition: all .25s ease;
+        }
+        
+       .btn-primary {
+          background: linear-gradient(180deg, #0aa0a5 0%, #008f95 100%);
+          color: #fff;
         }
 
         .btn-primary:hover {
