@@ -5,6 +5,7 @@
 @import url("./testimonial.css");
 @import url("./director_message.css");
 @import url("./admission-requirements.css");
+@import url("./actuality.css");
 
 *,
 *::before,
@@ -43,6 +44,13 @@ h3 {
   padding: 0 20px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Utilities */
 .mb-8 {
   margin-bottom: 20px;
 }
@@ -51,12 +59,18 @@ h3 {
   margin-bottom: 40px;
 }
 
+.mt-4rem {
+  margin-top: 4rem;
+}
+
 .ft-size-14 {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
-  }
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
