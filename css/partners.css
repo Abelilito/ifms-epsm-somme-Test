@@ -1,11 +1,11 @@
 .partners {
   padding: 2rem;
   background:#fff;
-  border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
   gap: 20px;
   align-items: center;
+  border-top: 1px solid #edf2f7;
 }
 
 .partner {
