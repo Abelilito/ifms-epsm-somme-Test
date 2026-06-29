@@ -14,7 +14,7 @@ class CardComponent extends HTMLElement {
           padding: 40px;
           background: #FFFFFF;
           border: 1px solid #ececec;
-          border-radius: 14px;
+          border-radius: 10px;
           box-shadow: 0 20px 50px rgba(0,0,0,.08);
           transition: .3s;
         }
