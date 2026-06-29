@@ -37,7 +37,7 @@ class AccordionComponent extends HTMLElement {
 
           border-radius: 50%;
           background: #eef5ff;
-          color: #2c6cff;
+          color: #0aa0a5;
 
           font-size: 1.5rem;
 
@@ -57,7 +57,7 @@ class AccordionComponent extends HTMLElement {
 
         .accordion-item.active .plus {
           transform: rotate(45deg);
-          background: #2c6cff;
+          background: #0aa0a5;
           color: white;
         }
 
