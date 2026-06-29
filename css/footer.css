@@ -1,4 +1,4 @@
-.footer {
+footer {
   margin: 1rem auto;
   background:#fff;
   overflow: hidden;
@@ -99,7 +99,7 @@
 
 
 @media (max-width: 768px) {
-  .footer {
+  footer {
     .footer-top {
       flex-direction: column;
     }
