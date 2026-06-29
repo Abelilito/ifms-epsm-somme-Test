@@ -3,6 +3,7 @@
 @import url("./welcome.css");
 @import url("./stats.css");
 @import url("./testimonial.css");
+@import url("./director_message.css");
 
 *,
 *::before,
@@ -28,11 +29,14 @@ body {
 }
 
 h3 {
-  text-align: center;
   font-size: clamp(18px, 2vw, 22px);
   font-family: 'Montserrat-bold', sans-serif;
   color: #0B1741;
   padding-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 20px;
 }
 
 .container {

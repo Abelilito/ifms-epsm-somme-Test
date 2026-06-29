@@ -2,6 +2,26 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+
+  .quote {
+    display: block;
+    color: #0aa0a5;
+    font-size: 50px;
+    font-family: Georgia, serif;
+    line-height: .8;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+    color: #2d2d2d;
+    font-size: clamp(14px, 2vw, 14px);
+    font-family: 'Montserrat-medium', sans-serif;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -13,5 +33,9 @@
 @media (max-width: 768px) {
   .wrapper-testimonials {
     grid-template-columns: 1fr;
+  }
+  
+  .quote {
+    font-size: 60px;
   }
 }

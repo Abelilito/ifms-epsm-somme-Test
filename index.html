@@ -6,13 +6,15 @@
     <title>IFMS EPSM SOMME</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/director-message.js"></script>
+
     <!-- Web components -->
     <script src="js/components/button-cta.js"></script>
     <script src="js/components/btn-dropdown.js"></script>
     <script src="js/components/dropdown-submenu.js"></script>
     <script src="js/components/dropdown-item.js"></script>
     <script src="js/components/stat-card.js"></script>
-    <script src="js/components/testimonial-card.js"></script>
+    <script src="js/components/card-box.js"></script>
   </head>
 
   <body>
@@ -95,7 +97,7 @@
               </li>
 
               <li class="border-top-li">
-                <button-cta href="#" variant="btn-primary" text="Contact"></button-cta>
+                <button-cta href="#" variant="btn-success" text="Contact"></button-cta>
               </li>
             </ul>
           </nav>
@@ -110,13 +112,18 @@
             <div class="welcome-overlay"></div>
             <div class="welcome__content">
               <h1>
-                Institut de Formation<br>
-                aux Métiers de la Santé
+                Former aujourd'hui <br>
+                les soignants de demain
               </h1>
 
               <p>
                 L'IFMS de l'EPSM de la Somme forme des professionnels compétents, engagés et responsables.
               </p>
+
+              <div>
+                <button-cta href="#" variant="btn-success" text="Découvrir nos formations"></button-cta>
+                <button-cta href="#" variant="btn-primary" text="Candidater"></button-cta>
+              </div>
             </div>
           </div>
         </section>
@@ -151,28 +158,141 @@
           ></stat-card>
         </section>
 
+        <section class="course-and-message container">
+          <div class="director-message">
+            <div class="img-wrapper">
+              <img src="images/anne-buisson.jpg" alt="Image répresentant la directrice Anne Buisson">
+            </div>
+
+            <div>
+              <h3>
+                Directrice des soins, Directrice de l'institut :
+                <br>
+                <strong>Madame Anne BUISSON</strong>
+              </h3>
+
+              <p>Chers visiteurs,</p>
+
+              <p>
+                C’est avec une immense fierté et un grand plaisir que je vous souhaite la bienvenue sur le site web de notre
+                Institut de Formation en Soins Infirmiers et Aide-Soignant de l’Etablissement Public de Santé Mentale de la Somme.
+              </p>
+
+              <p>
+                En tant que Directrice, je suis honorée de représenter cet institut dédié à l’éducation et à la formation des
+                futurs professionnels de la santé. Nous croyons fermement que l’excellence des soins repose sur des compétences
+                solides, une éthique professionnelle irréprochable et une passion sincère pour aider les autres.
+              </p>
+
+              <div class="director-message__hidden">
+                <p>
+                  Notre institut est le fruit de nombreuses années d’expérience et de collaboration avec nos différents
+                  partenaires dans le domaine des soins de santé. Nous nous efforçons de fournir une formation de qualité,
+                  tout en valorisant l’humanité, le prendre soin et la valorisation de notre pratique.
+                </p>
+
+                <p>
+                  Que vous souhaitiez embrasser une carrière en tant qu’infirmier ou aide-soignant, nous sommes là pour vous
+                  accompagner tout au long de votre parcours. Notre équipe pédagogique compétente et expérimentée est dédiée
+                  à votre réussite, en vous offrant un environnement d’apprentissage stimulant, interactif et bienveillant.
+                </p>
+
+                <p>
+                  Au sein de notre institut, vous trouverez des programmes de formation complets, adaptés aux besoins
+                  actuels du secteur de la santé. Nous combinons des cours théoriques approfondis avec des stages pratiques
+                  dans des établissements de santé de notre territoire, vous offrant ainsi l’opportunité de mettre en pratique
+                  vos connaissances et de développer vos compétences.
+                </p>
+
+                <p>
+                  Nous sommes convaincus que chaque individu a le potentiel de devenir un professionnel de la santé, et nous
+                  nous engageons à vous soutenir dans votre cheminement. Que vous soyez un étudiant passionné, un professionnel
+                  en reconversion ou simplement une personne animée par le désir d’aider les autres, notre institut vous offre
+                  une plateforme solide pour vous accompagner dans l’aide à la réussite.
+                </p>
+
+                <p>
+                  Je vous invite à explorer notre site web pour découvrir plus en détail nos programmes, nos valeurs et notre
+                  engagement. N’hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez obtenir des
+                  informations supplémentaires. Nous serons ravis de vous aider.
+                </p>
+
+                <p>
+                  Je vous souhaite une agréable visite sur notre site web et j’espère avoir l’opportunité de vous accueillir
+                  bientôt au sein de notre Institut de Formation aux Métiers de la Santé.
+                </p>
+
+                <p>Bien cordialement,</p>
+
+                <p>Anne BUISSON</p>
+              </div>
+
+              <button class="read-more">
+                Lire la suite du mot de la directrice →
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h3>Nos formations</h3>
+            <div class="mb-8">
+              <card-box>
+                <div class="course-name">
+                  <img src="images/svg/aide_soignant.svg" alt="">
+                  <div>Aide soignant</div>
+                </div>
+                <p>Accompagnez les patients dans les actes essentiels de la vie quotidienne</p>
+                <a href="">En savoir plus → </a>
+              </card-box>
+            </div>
+
+            <div class="mb-8">
+              <card-box>
+                <div class="course-name">
+                  <img src="images/svg/infirmier.svg" alt="">
+                  <div>Infirmier</div>
+                </div>
+                <p>Devenez infirmier et exercez un métier au coeur de la relation et du soin</p>
+                <a href="">En savoir plus → </a>
+              </card-box>
+            </div>
+
+            <card-box>
+              <div class="course-name">
+                <img src="images/svg/formation_continue.svg" alt="">
+                <div>Formation continue</div>
+              </div>
+              <p>Développez vos compétences et évoluez tout au long de votre carrière</p>
+              <a href="">En savoir plus → </a>
+            </card-box>
+          </div>
+        </section>
+
         <section class="container">
           <h3>Verbatims étudiants</h3>
           <div class="wrapper-testimonials">
-            <testimonial-card
-              text="
-                J’ai passé 3 belles années de formation au sein de l’institut, le suivi des étudiants est vraiment présent.
-                On se sent accompagné et écouté.
-              "
-            ></testimonial-card>
+            <card-box>
+              <span class="quote">❝</span>
+              <p>
+                « J’ai passé 3 belles années de formation au sein de l’institut, le suivi des étudiants est vraiment présent.
+                On se sent accompagné et écouté. »
+              </p>
+            </card-box>
 
-            <testimonial-card
-              text="
-                Aucune remarque, les enseignements et les actions mis en place à l’IFSI sont vraiment propices
-                à une bonne prise de poste!
-              "
-            ></testimonial-card>
+            <card-box>
+              <span class="quote">❝</span>
+              <p>
+                « Aucune remarque, les enseignements et les actions mis en place à l’IFSI sont vraiment propices
+                à une bonne prise de poste! »
+              </p>
+            </card-box>
 
-            <testimonial-card
-              text="
-                Pour moi tout est parfait seulement un grand merci à toute l’équipe de formation car je suis réellement épanouie !
-              "
-            ></testimonial-card>
+            <card-box>
+              <span class="quote">❝</span>
+              <p>
+                « Pour moi tout est parfait seulement un grand merci à toute l’équipe de formation car je suis réellement épanouie ! »
+              </p>
+            </card-box>
           </div>
         </section>
       </main>
