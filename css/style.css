@@ -77,3 +77,10 @@ h3 {
 .justify-between {
   justify-content: space-between;
 }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}

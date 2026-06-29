@@ -1,6 +1,9 @@
 header {
-  position: relative;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 8px 25px rgba(0,0,0,.06);
 
   nav {
     display: flex;
@@ -24,6 +27,7 @@ header {
       display: none;
       list-style: none;
       background-color: white;
+      box-shadow: 0 8px 25px rgba(0,0,0,.06);
     }
 
     .icon-mobile {
@@ -120,8 +124,6 @@ header {
 
 @media (min-width: 48em) {
   header {
-    position: absolute;
-    width: 100%;
     .icon-mobile {
       display: none;
     }
@@ -137,6 +139,7 @@ header {
         list-style: none;
         margin: 0;
         padding: 0;
+        box-shadow: none;
       }
 
       .menu-links > li {
