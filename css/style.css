@@ -35,6 +35,10 @@ h3 {
   padding-top: 2rem;
 }
 
+.mb-8 {
+  margin-bottom: 20px;
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
