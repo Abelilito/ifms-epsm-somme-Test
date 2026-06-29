@@ -22,6 +22,12 @@
   );
 }
 
+.director-message__hidden {
+  img {
+    width: 27%;
+  }
+}
+
 .welcome__content {
   position: absolute;
   inset: 0;
