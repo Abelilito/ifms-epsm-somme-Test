@@ -1,0 +1,21 @@
+.partners {
+  padding: 2rem;
+  background:#fff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner img {
+  max-width: 100%;
+  max-height: 90px;
+  object-fit: contain;
+}
