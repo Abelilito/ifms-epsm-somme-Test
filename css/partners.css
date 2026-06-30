@@ -1,5 +1,5 @@
 .partners {
-  padding: 2rem;
+  padding: 1rem 1rem 0 1rem;
   background:#fff;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
